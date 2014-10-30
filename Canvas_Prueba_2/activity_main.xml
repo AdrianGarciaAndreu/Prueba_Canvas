@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    
+
+    
+    <!-- Layout for text pseudo-title bar -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="#222222"
+        android:orientation="vertical" 
+        android:layout_marginTop="5dp">
+        
+         	<TextView
+         	    android:layout_width="wrap_content"
+         	    android:layout_height="wrap_content"
+         	    android:layout_gravity="center"
+         	    android:textSize="15sp"
+         	    android:text="@string/hello_world"
+         	    android:textColor="#FFFFFF" />
+         	
+         	<Button
+         	    android:id="@+id/color_picker"
+         	    android:layout_width="wrap_content"
+         	    android:layout_height="wrap_content"
+         	    android:layout_wei="0.5"
+         	    />
+        
+    </LinearLayout>
+    
+       
+    <!-- Layout for the canvas -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:background="#CCCCCC"
+        android:orientation="vertical"
+        android:layout_marginTop="1dp" >
+        
+        <dam2.draw.CanvasView
+            android:id="@+id/canvas1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            
+        </dam2.draw.CanvasView>
+        
+        
+        
+    </LinearLayout>
+    
+   
+
+</LinearLayout>
